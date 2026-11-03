@@ -1,1 +1,463 @@
 
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Paragon Insight - Tumbuh Bersama, Berdampak untuk Sesama.">
+<title>Paragon Insight | Pendidikan dan Generasi Muda</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #263b4b;
+    background: #fbfaf6;
+    line-height: 1.7;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background: #ffffff;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
+
+.logo {
+    color: #173b55;
+    font-size: 23px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #173b55;
+    margin-left: 22px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+nav a:hover {
+    color: #4c9b91;
+}
+
+.hero {
+    padding: 100px 8%;
+    background: linear-gradient(120deg, #dcefe8, #f7efd9);
+}
+
+.hero small {
+    color: #397e79;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.hero h1 {
+    color: #173b55;
+    font-size: 45px;
+    max-width: 750px;
+    line-height: 1.25;
+    margin: 18px 0;
+}
+
+.hero p {
+    max-width: 650px;
+    font-size: 17px;
+    color: #526775;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+    background: #173b55;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+section {
+    padding: 75px 8%;
+}
+
+.section-title {
+    color: #173b55;
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    color: #71818a;
+    max-width: 750px;
+    margin-bottom: 30px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.card {
+    background: white;
+    padding: 27px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+    color: #397e79;
+    margin-bottom: 12px;
+}
+
+.program {
+    background: #e5f1eb;
+}
+
+.news {
+    border-left: 5px solid #d8a84e;
+}
+
+.news h3 {
+    color: #173b55;
+    font-size: 22px;
+    margin: 12px 0;
+}
+
+.date {
+    color: #819098;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.news p {
+    margin-top: 13px;
+    text-align: justify;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gallery-item {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+}
+
+.gallery-visual {
+    min-height: 190px;
+    background: linear-gradient(135deg, #dcefe8, #f3e6c8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: #173b55;
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.gallery-text {
+    padding: 20px;
+}
+
+.gallery-text h3 {
+    color: #397e79;
+    font-size: 17px;
+}
+
+.gallery-text p {
+    color: #71818a;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+footer {
+    background: #173b55;
+    color: white;
+    padding: 45px 8%;
+}
+
+footer h2 {
+    margin-bottom: 12px;
+}
+
+footer p {
+    margin: 7px 0;
+}
+
+footer a {
+    color: #dcefe8;
+}
+
+@media(max-width: 750px) {
+    header {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 0 7px;
+        font-size: 12px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .grid, .gallery {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">PARAGON INSIGHT</div>
+    <nav>
+        <a href="#beranda">Beranda</a>
+        <a href="#profil">Profil</a>
+        <a href="#berita">Berita</a>
+        <a href="#galeri">Galeri</a>
+        <a href="#kontak">Kontak</a>
+    </nav>
+</header>
+
+<div class="hero" id="beranda">
+    <small>PENDIDIKAN • KOLABORASI • INOVASI</small>
+    <h1>Tumbuh Bersama, Berdampak untuk Sesama</h1>
+    <p>
+        Ruang informasi mengenai komitmen perusahaan dalam mendukung
+        pendidikan, kreativitas, dan pengembangan potensi generasi muda.
+    </p>
+    <a href="#berita" class="btn">Jelajahi Informasi</a>
+</div>
+
+<section id="profil">
+    <h2 class="section-title">Profil Perusahaan</h2>
+    <p class="subtitle">
+        PT Paragon Technology and Innovation merupakan perusahaan
+        Indonesia yang bergerak di bidang produk kecantikan.
+        Perusahaan juga memberikan perhatian terhadap pengembangan
+        masyarakat melalui berbagai kegiatan sosial dan pendidikan.
+    </p>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Visi Perusahaan</h3>
+            <p>
+                Memberikan manfaat dan menciptakan kebaikan bagi
+                masyarakat serta lingkungan melalui inovasi.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Misi Perusahaan</h3>
+            <ul>
+                <li>Mengembangkan kemampuan karyawan.</li>
+                <li>Memberikan manfaat bagi konsumen.</li>
+                <li>Melakukan perbaikan secara berkelanjutan.</li>
+                <li>Membangun kolaborasi.</li>
+                <li>Memberikan perhatian pada pendidikan dan kesehatan masyarakat.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Bidang Usaha</h3>
+            <p>
+                Bergerak dalam bidang produk kecantikan dan perawatan
+                diri dengan merek yang dikenal antara lain Wardah,
+                Make Over, dan Emina.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Struktur Organisasi</h3>
+            <p>
+                Kegiatan perusahaan didukung oleh fungsi kepemimpinan,
+                pemasaran, pengembangan produk dan riset, sumber daya
+                manusia, keuangan, distribusi, teknologi informasi,
+                serta corporate affairs.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="program">
+    <h2 class="section-title">Program Pendidikan dan Pengembangan</h2>
+    <p class="subtitle">
+        Dukungan terhadap generasi muda diwujudkan melalui kegiatan
+        pendidikan, pelatihan, pengembangan diri, dan kolaborasi.
+    </p>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Paragon Scholarship</h3>
+            <p>
+                Program beasiswa yang diperkenalkan dalam materi tugas
+                sebagai salah satu bentuk dukungan terhadap pendidikan
+                dan pengembangan potensi mahasiswa.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Novo Club</h3>
+            <p>
+                Program pengembangan generasi muda yang dikaitkan dengan
+                kreativitas, kepemimpinan, pengalaman, dan kolaborasi.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="berita">
+    <h2 class="section-title">Berita Perusahaan</h2>
+    <p class="subtitle">
+        Informasi dan kegiatan perusahaan dalam mendukung masyarakat.
+    </p>
+
+    <div class="card news">
+        <div class="date">SIARAN PERS | JAKARTA, 4 OKTOBER 2026</div>
+
+        <h3>
+            PT Paragon Technology and Innovation Dorong Pengembangan
+            Generasi Muda melalui Program Pendidikan
+        </h3>
+
+        <p>
+            PT Paragon Technology and Innovation mendorong pengembangan
+            generasi muda melalui berbagai kegiatan dan program yang
+            berfokus pada pendidikan. Inisiatif tersebut menjadi salah
+            satu bentuk perhatian perusahaan terhadap peningkatan
+            keterampilan, kreativitas, dan kepemimpinan generasi muda.
+        </p>
+
+        <p>
+            Melalui program seperti Paragon Scholarship dan Novo Club,
+            serta kegiatan seminar, pelatihan, dan pengembangan diri,
+            generasi muda memperoleh ruang untuk memperluas wawasan
+            dan mengembangkan potensi. Kolaborasi dengan institusi
+            pendidikan dan pemanfaatan media digital juga menjadi
+            sarana untuk menjangkau mahasiswa serta kalangan muda.
+        </p>
+
+        <p>
+            Upaya tersebut menunjukkan bahwa kegiatan perusahaan
+            tidak hanya berkaitan dengan bidang usaha, tetapi juga
+            dapat diwujudkan melalui kontribusi sosial. Dukungan
+            terhadap pendidikan diharapkan dapat mendorong lahirnya
+            generasi yang kreatif, percaya diri, dan mampu memberikan
+            dampak positif bagi lingkungan sekitarnya.
+        </p>
+
+        <p>
+            <strong>Catatan:</strong> Artikel ini dikembangkan dari
+            materi siaran pers Tugas 1 untuk keperluan akademik.
+        </p>
+    </div>
+</section>
+
+<section id="galeri">
+    <h2 class="section-title">Galeri Kegiatan</h2>
+    <p class="subtitle">
+        Dokumentasi materi kampanye dan aktivitas komunikasi perusahaan.
+    </p>
+
+    <div class="gallery">
+        <div class="gallery-item">
+            <div class="gallery-visual">
+                Pendidikan untuk Masa Depan
+            </div>
+            <div class="gallery-text">
+                <h3>Brosur Kampanye Pendidikan</h3>
+                <p>
+                    Tumbuh Bersama, Berdampak untuk Sesama.
+                    Belajar, berkembang, dan menginspirasi.
+                </p>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <div class="gallery-visual">
+                Seminar Pendidikan
+            </div>
+            <div class="gallery-text">
+                <h3>Kegiatan Seminar</h3>
+                <p>
+                    Dokumentasi kegiatan seminar dan edukasi
+                    bersama generasi muda.
+                </p>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <div class="gallery-visual">
+                Pelatihan dan Pengembangan Diri
+            </div>
+            <div class="gallery-text">
+                <h3>Kegiatan Pelatihan</h3>
+                <p>
+                    Dokumentasi pelatihan, diskusi, dan kegiatan
+                    pengembangan keterampilan.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <p style="margin-top:20px;color:#71818a;font-size:13px">
+        Catatan: Ganti dua ilustrasi kegiatan dengan foto dokumentasi
+        kegiatan perusahaan yang autentik dan tambahkan file brosur
+        Tugas 2 agar galeri memenuhi ketentuan tugas.
+    </p>
+</section>
+
+<footer id="kontak">
+    <h2>PARAGON INSIGHT</h2>
+    <p>
+        Media informasi mengenai pendidikan dan pengembangan
+        generasi muda.
+    </p>
+    <p><strong>Kontak pada materi brosur:</strong></p>
+    <p>PR / Corporate Affairs</p>
+    <p>
+        Email:
+        <a href="mailto:customercare@paracorpgroup.com">
+            customercare@paracorpgroup.com
+        </a>
+    </p>
+    <p>Telepon: 0804-140-1123</p>
+    <p>Jakarta, Indonesia</p>
+    <p style="margin-top:20px;font-size:12px;color:#dcefe8">
+        © 2026 Paragon Insight | Tugas Teknik Public Relations
+    </p>
+</footer>
+
+</body>
+</html>
+
